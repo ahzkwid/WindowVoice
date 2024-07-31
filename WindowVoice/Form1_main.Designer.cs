@@ -31,6 +31,9 @@
             this.textBox1_speech = new System.Windows.Forms.TextBox();
             this.checkBox1_enter_to_clear = new System.Windows.Forms.CheckBox();
             this.button1_enter = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox2_Output = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // textBox1_speech
@@ -62,11 +65,41 @@
             this.button1_enter.UseVisualStyleBackColor = true;
             this.button1_enter.Click += new System.EventHandler(this.button1_enter_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(491, 38);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 20);
+            this.comboBox1.TabIndex = 3;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(489, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 12);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Language";
+            // 
+            // comboBox2_Output
+            // 
+            this.comboBox2_Output.FormattingEnabled = true;
+            this.comboBox2_Output.Location = new System.Drawing.Point(491, 409);
+            this.comboBox2_Output.Name = "comboBox2_Output";
+            this.comboBox2_Output.Size = new System.Drawing.Size(121, 20);
+            this.comboBox2_Output.TabIndex = 5;
+            this.comboBox2_Output.SelectedIndexChanged += new System.EventHandler(this.comboBox2_Output_SelectedIndexChanged);
+            // 
             // Form1_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.comboBox2_Output);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1_enter);
             this.Controls.Add(this.checkBox1_enter_to_clear);
             this.Controls.Add(this.textBox1_speech);
@@ -82,6 +115,9 @@
         private System.Windows.Forms.TextBox textBox1_speech;
         private System.Windows.Forms.CheckBox checkBox1_enter_to_clear;
         private System.Windows.Forms.Button button1_enter;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox2_Output;
     }
 }
 
