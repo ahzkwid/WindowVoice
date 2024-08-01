@@ -34,6 +34,9 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox2_Output = new System.Windows.Forms.ComboBox();
+            this.comboBox_Input = new System.Windows.Forms.ComboBox();
+            this.waveViewer_Input = new NAudio.Gui.WaveViewer();
+            this.waveViewer_Text = new NAudio.Gui.WaveViewer();
             this.SuspendLayout();
             // 
             // textBox1_speech
@@ -92,11 +95,43 @@
             this.comboBox2_Output.TabIndex = 5;
             this.comboBox2_Output.SelectedIndexChanged += new System.EventHandler(this.comboBox2_Output_SelectedIndexChanged);
             // 
+            // comboBox_Input
+            // 
+            this.comboBox_Input.FormattingEnabled = true;
+            this.comboBox_Input.Location = new System.Drawing.Point(491, 383);
+            this.comboBox_Input.Name = "comboBox_Input";
+            this.comboBox_Input.Size = new System.Drawing.Size(121, 20);
+            this.comboBox_Input.TabIndex = 6;
+            this.comboBox_Input.SelectedIndexChanged += new System.EventHandler(this.comboBox_Input_SelectedIndexChanged);
+            // 
+            // waveViewer_Input
+            // 
+            this.waveViewer_Input.Location = new System.Drawing.Point(352, 383);
+            this.waveViewer_Input.Name = "waveViewer_Input";
+            this.waveViewer_Input.SamplesPerPixel = 128;
+            this.waveViewer_Input.Size = new System.Drawing.Size(133, 20);
+            this.waveViewer_Input.StartPosition = ((long)(0));
+            this.waveViewer_Input.TabIndex = 7;
+            this.waveViewer_Input.WaveStream = null;
+            // 
+            // waveViewer_Text
+            // 
+            this.waveViewer_Text.Location = new System.Drawing.Point(124, 260);
+            this.waveViewer_Text.Name = "waveViewer_Text";
+            this.waveViewer_Text.SamplesPerPixel = 128;
+            this.waveViewer_Text.Size = new System.Drawing.Size(350, 55);
+            this.waveViewer_Text.StartPosition = ((long)(0));
+            this.waveViewer_Text.TabIndex = 8;
+            this.waveViewer_Text.WaveStream = null;
+            // 
             // Form1_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.waveViewer_Text);
+            this.Controls.Add(this.waveViewer_Input);
+            this.Controls.Add(this.comboBox_Input);
             this.Controls.Add(this.comboBox2_Output);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
@@ -118,6 +153,9 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox2_Output;
+        private System.Windows.Forms.ComboBox comboBox_Input;
+        private NAudio.Gui.WaveViewer waveViewer_Input;
+        private NAudio.Gui.WaveViewer waveViewer_Text;
     }
 }
 
