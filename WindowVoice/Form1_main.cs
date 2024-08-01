@@ -255,8 +255,8 @@ namespace WindowVoice
                     Console.WriteLine("로드됨");
                 };
                 
-                recognizer.SetInputToDefaultAudioDevice();
-                recognizer.RecognizeAsync(RecognizeMode.Multiple);
+                //recognizer.SetInputToDefaultAudioDevice();
+                //recognizer.RecognizeAsync(RecognizeMode.Multiple);
                 
             }
 
